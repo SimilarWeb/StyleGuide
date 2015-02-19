@@ -1,0 +1,28 @@
+{
+  "name": "sw-styleguide",
+  "version": "1.3.20140617",
+  "authors": [
+    "Oleg Glybchenko <olegg@similarweb.com>",
+	"Michal Sela <michalse@similargroup.com>"
+  ],
+  "main":  "stylesheets/base.css",
+	"ignore": [
+	  "**/*.html",
+	  "**/*.jpg",
+	  "**/*.jpeg",
+	  "*.html",
+	  "**/*.eot",
+	  "**/*.svg",
+	  "**/*.ttf",
+	  "**/*.woff"
+  ],
+  "description": "base components and classes of similarweb packaged as a single entity",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "styleguide",
+    "css"
+  ],
+  "license": "MIT"
+}
