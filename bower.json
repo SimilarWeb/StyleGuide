@@ -1,9 +1,10 @@
 {
   "name": "sw-styleguide",
-  "version": "1.3.20140617",
+  "version": "0.0.1",
   "authors": [
     "Oleg Glybchenko <olegg@similarweb.com>",
-	"Michal Sela <michalse@similargroup.com>"
+	"Michal Sela <michalse@similarweb.com>",
+	"David Tintner<davidt@similarweb.com>"
   ],
   "main":  "stylesheets/base.css",
 	"ignore": [
