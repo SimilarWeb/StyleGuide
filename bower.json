@@ -6,7 +6,7 @@
 	"Michal Sela <michalse@similarweb.com>",
 	"David Tintner<davidt@similarweb.com>"
   ],
-  "main":  "dist/*.scss",
+  "main":  "dev/*.scss",
 	"ignore": [
 	  "**/*.html",
 	  "**/*.jpg",
@@ -23,7 +23,8 @@
   ],
   "keywords": [
     "styleguide",
-    "css"
+    "css",
+	"scss"
   ],
   "license": "MIT"
 }
