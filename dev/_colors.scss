@@ -1,171 +1,93 @@
-// Colors
-$blue-extra-dark: #2b3d52; // brand
-$blue-dark: #096898;
-$blue-grey: #444e5f;
-$blue-medium-dark: #066799;
-$blue: #0061c8; // links, checkmarks, strong
-$blue-medium: #587FC5;
-$blue-strong: #0A88C7;
-$blue-moderate: #4a86c5; // websites
-$blue-light: #3999C1;
-$blue-cyan: #00b5f0;
-$blue-soft: #ABBFE2;
-$purple-violet-desaturated: #BD8ED0;
-$purple-violet: #9966FF;
-$purple-violet-soft: #8E70E0;
-$pink-strong: #C01C95;
-$pink-vivid: #FF33CC;
-$green-light: #95C11F;
-$green: #71CA2F;
-$orange: #FF9700;
-$orange-light: lighten($orange, 5%);
-$orange-medium: #F39200;
-$orange-medium-light: #FF9900;
-$orange-dark: #FF6600;
-$redLight: #EA5B0C;
-$red: red;
-$brown: #8A6D3B;
+//*
+//* Old Color Palette
+//*
+$midnightBlue: #2c3e50;
+$peteRiver: #538FCC;
+$belizeHole: #3B7AB5;
+$carrot: #e67e22;
 
-// shades of grey
-$black: #000000;
-$black-off: #2A3D53;
-$grey-extra-dark: #545454;
-$grey-dark: #636363;
-$grey-medium-dark: #707070;
-$grey: gray;
-$grey-medium-light: #90959B;
-$grey-light: #C7C7C7;
-$grey-extra-light: #D8D8D8;
-$grey-darker-white: #ededed;
-$grey-white: #F4F4F4;
-$grey-almost-white: #FAFAFA;
+$blue: #4383b3;
+$blueBar: $blue;
+$black: #000;
+$paidColor: #9BC6E6;
+
+$grayTextLight: #838383;
+$grayText: #555;
+$grayTextDark: #545454;
 $white: #fff !default;
+$grayMoreDarker: #d2d2d2;
+$grayDarker: #d9d9d9;
+$grayDark: #E5E5E5;
+$gray: #F0F0F0;
+$grayLight: #F3F3F3;
+$grayLighter: #F9F9F9;
+$grayBorder: $grayMoreDarker;
 
-// Analysis Colors
-$AlsoVisitedColor: $purple-violet;
-$DirectColor: $blue;
-$ReferralsColor: $green;
+$blueLight: #e6f5fc;
+$blueDark: #3999C1;
+$blueSemiDark: #6e99af;
 
-$SearchColor: $pink-strong;
-$SearchLightColor: $orange-dark;
-$SearchTrafficGray: $grey-light;
-$SearchTrafficBlue: $blue-moderate;
-$SearchTrafficGreen: $green-light;
-$SearchTrafficOrange: $orange-medium;
-$SearchTrafficPurple: $purple-violet-desaturated;
-$SearchTrafficRed: $redLight;
+$hrBorder: $grayDarker;
+$textColor: $grayTextDark;
 
-$SocialColor: $blue-cyan;
-$SocialPaidColor: $purple-violet;
+$placeholderText: $grayDarker;
 
-$SimilarSitesBlue: $blue-medium;
-$SimilarSitesLightPurple: $blue-soft;
+$bodyBackground: #E9E9E9;
 
-$TrafficGeographyColor: $blue-light;
+$navbarBackgroundHighlight: #3999c1;
+$navbarBackground: $peteRiver;
 
-$MailColor: $purple-violet-soft;
+$bg1: #2B3D53;
 
-$DisplayAdsColor: $pink-vivid;
+$navbarLinkBackgroundHover: $belizeHole;
+$navbarLinkBackgroundActive: $belizeHole;
+$navbarLinkColorHover: #fff;
 
-$Series0Color: $blue-medium-dark;
-$Series1Color: $orange-medium-light;
-$Series2Color: $green;
+$dropdownLinkColor: $blueDark;
 
-$ProgressBarBackground: $grey-white;
+$navbarLinkColorActive: #fff;
+$navbarText: #fff;
+$navbarLinkColor: #fff;
 
-$compareTextboxColor: $grey-extra-dark;
-$CompareControlColor: $blue-light;
-$noDataText: $grey-medium-light;
+//*
+//* New Color Definitions (give colors a hex here, then components can reference these variables)
+//*
+$blue-dark: #2B3D52;
+$blue-medium-dark: #486AB4;
+$blue-medium: #508ECF;
+$orange: #ff9700;
+$green: #7CC924;
+$red: red;
+$gray-extra-dark: #313131;
+$gray-dark: #707070;
+$gray-new: #868686;
+$gray-medium: #abb1b8;
+$gray-light: #d6d6d6;
+$gray-extra-light: #eaeaea;
+$sagi-white: #fafafa;
+$sagi-offwhite: #f3f3f3;
 
-// ga-colors
-$ga-error: #E41A1A;
-$ga-ok: #7CC923;
-
-// A vertical gradient lighter(at top) -> darker(at bottom)
-@mixin sw-vertical-gradient($main-color, $change-percent) {
-  //  $lighter-color: lighten($main-color, $change-percent);
-  $darker-color: darken($main-color, $change-percent);
-
-  filter-gradient: $main-color, $darker-color, vertical; // IE6-9
-  background-image: linear-gradient($main-color, $darker-color);
-  &:hover {
-    filter-gradient: $darker-color, $main-color, vertical; // IE6-9
-    background-image: linear-gradient($darker-color, $main-color);
-  }
+//*
+//* chart marker colors
+//*
+// need to use just the string for specifying in URL in the
+$compare-color-a: '8E70E0';
+$compare-color-b: '00B5F0';
+$compare-color-c: '71CA2F';
+$compare-color-d: 'F60';
+$compare-color-e: 'F3C';
+$chart-color-mobile: '0061C8';
+$chart-color-web: '97BDEC';
+@function as-hex($color) {
+  @return unquote('#' + $color);
 }
 
-
-/*
-## Color Palette
-
-```
-    <h6>Colors</h6>
-    <ul class="palette">
-        <li class="grey-extra-dark" style="background: #{$grey-extra-dark};">#{$grey-extra-dark}</li>
-        <li class="grey-dark" style="background: #{$grey-dark};">#{$grey-dark}</li>
-        <li class="grey-medium-dark"  style="background: #{$grey-medium-dark};">#{$grey-medium-dark}</li>
-        <li class="grey" style="background: #{$grey};">#{$grey}</li>
-        <li class="grey-medium-light" style="background: #{$grey-medium-light};">#{$grey-medium-light}</li>
-        <li class="grey-light" style="background: #{$grey-light};">#{$grey-light}</li>
-        <li class="grey-extra-light" style="background: #{$grey-extra-light};">#{$grey-extra-light}</li>
-        <li class="grey-white" style="#${grey-white};">#{$grey-white}</li>
-        <li class="grey-almost-white" style="background: #{$grey-almost-white};">#{$grey-almost-white}</li>
-        <li class="blue-extra-dark" style="background: #{$blue-extra-dark};">#{$blue-extra-dark}</li>
-        <li class="blue-dark" style="background: #{$blue-dark};">#{$blue-dark}</li>
-        <li class="blue-medium-dark" style="background: #{$blue-medium-dark};">#{$blue-medium-dark}</li>
-        <li class="blue" style="background: #{$blue};">#{$blue}</li>
-        <li class="blue-medium" style="background: #{$blue-medium};">#{$blue-medium}</li>
-        <li class="blue-moderate" style="background: #{$blue-moderate};">#{$blue-moderate}</li>
-        <li class="blue-strong" style="background: #{$blue-strong};">#{$blue-strong}</li>
-        <li class="blue-light" style="background: #{$blue-light};">#{$blue-light}</li>
-        <li class="blue-cyan" style="background: #{$blue-cyan};">#{$blue-cyan}</li>
-        <li class="blue-soft" style="background: #{$blue-soft};">#{$blue-soft}</li>
-        <li class="purple-violet-desaturated" style="background: #{$purple-violet-desaturated};">#{$purple-violet-desaturated}</li>
-        <li class="purple-violet" style="background: #{$purple-violet};">#{$purple-violet}</li>
-        <li class="purple-violet-soft" style="background: #{$purple-violet-soft};">#{$purple-violet-soft}</li>
-        <li class="pink-strong" style="background: #{$pink-strong};">#{$pink-strong}</li>
-        <li class="pink-vivid" style="background: #{$pink-vivid};">#{$pink-vivid}</li>
-        <li class="green-light" style="background: #{$green-light};">#{$green-light}</li>
-        <li class="green" style="background: #{$green};">#{$green}</li>
-        <li class="orange-medium" style="background: #{$orange-medium};">#{$orange-medium}</li>
-        <li class="orange-medium-light" style="background: #{$orange-medium-light};">#{$orange-medium-light}</li>
-        <li class="orange" style="background: #{$orange};">#{$orange}</li>
-        <li class="orange-light" style="background: #{$orange-light};">#{$orange-light}</li>
-        <li class="orange-dark" style="background: #{$orange-dark};">#{$orange-dark}</li>
-        <li class="redLight" style="background: #{$redLight};">#{$redLight}</li>
-        <li class="red" style="background: #{$red};">#{$red}</li>
-    </ul>
-
-``` */
-
-.palette {
-  li {
-    list-style: none;
-    float:left;
-    margin: 0 10px 10px 0;
-    height: 80px;
-    padding-top: 35px;
-    width: 120px;
-    color: #fff;
-    text-align: center;
-    border-radius: 50%;
-    border: 4px rgba(0,0,0,0.05) solid;
-    &:before {
-      content: '$'attr(class);
-      display: block;
-      color: #fff;
-    }
-  }
-  %dark {
-    color: #222;
-    &:before { color: #222; }
-  }
-}
-
-.grey-light,
-.grey-almost-white,
-.grey-white,
-.grey-extra-light {
-  @extend %dark;
-  background: $grey-extra-light;
-}
+//*
+//* New Site Components (only base/shared values here, individual components define colors within their scss file)
+//*
+$apps-color: $orange;
+$body-bg: $sagi-white;
+$border-color: $gray-medium;
+$pro-brand-blue: $blue-dark;
+$pro-brand-orange: $orange;
+$websites-color: $blue-medium;
