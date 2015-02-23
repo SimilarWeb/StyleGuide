@@ -6,7 +6,7 @@
 	"Michal Sela <michalse@similarweb.com>",
 	"David Tintner<davidt@similarweb.com>"
   ],
-  "main":  "stylesheets/base.css",
+  "main":  "dist/*.scss",
 	"ignore": [
 	  "**/*.html",
 	  "**/*.jpg",
