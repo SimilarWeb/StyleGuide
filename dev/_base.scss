@@ -1,0 +1,94 @@
+
+//
+//Defaults for the layout
+//
+$inputBorder: #CCC;
+
+$baseBorderRadius: 0;
+$inputBorderRadius: 0;
+$tabsHeight: 30px;
+
+$navbarHeight: 30px !default;
+$brandingHeight: 50px !default;
+$sidebarWidth: 300px;
+$helpSidebarWidth: 400px;
+$pageMinWidth: 1200px;
+$tableBorder: #ddd;
+$linkColor: #08c !default;
+$linkColorHover: darken($linkColor, 15%) !default;
+
+$baseFontSize: 12px;
+
+//*
+//* Site Structure
+//*
+$container-width: 1280px;
+$gutter-width: 32px;
+$input-element-height: 35px;
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+  height: 1px;
+  background-color: $body-bg;
+}
+
+.sw-container {
+  @extend %clearfix;
+  width: $container-width; // TODO DT: add breakpoints using respondTo mixin to reduce width
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.page-title {
+  // Todo DT: move to a new file for headings
+  padding: 26px 0;
+  margin: 0;
+  @include setFont($weight: 300, $size: 45px);
+  line-height: 1.2;
+  text-align: center;
+  color: $pro-brand-blue;
+}
+
+.page-sub-title {
+  @extend .page-title;
+  @include setFont($weight: 300, $size: 18px);
+  padding-top: 0;
+}
+
+.demoRibbon-wrapper {
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.demoRibbon-ribbon {
+  transform: rotate(45deg);
+  position: relative;
+  left: 26px;
+  top: -62px;
+  width: 100px;
+  height: 100px;
+  background-color: $blue-dark;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 0px 3px;
+  border-bottom: 1px solid white;
+}
+
+.demoRibbon-text {
+  position: absolute;
+  transform: rotate(45deg);
+  @include setFont($size: 12px);
+  bottom: 45px;
+  left: 40px;
+  text-align: center;
+  color: white;
+}

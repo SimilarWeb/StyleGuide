@@ -91,3 +91,38 @@ $border-color: $gray-medium;
 $pro-brand-blue: $blue-dark;
 $pro-brand-orange: $orange;
 $websites-color: $blue-medium;
+
+// Typography
+$disabled-text-color: $gray-medium;
+$text-color: $gray-dark;
+
+// A vertical gradient lighter(at top) -> darker(at bottom)
+@mixin sw-vertical-gradient($main-color, $change-percent) {
+  //  $lighter-color: lighten($main-color, $change-percent);
+  $darker-color: darken($main-color, $change-percent);
+
+  filter-gradient: $main-color, $darker-color, vertical; // IE6-9
+  background-image: linear-gradient($main-color, $darker-color);
+  &:hover {
+    filter-gradient: $darker-color, $main-color, vertical; // IE6-9
+    background-image: linear-gradient($darker-color, $main-color);
+  }
+}
+
+@mixin sw-vertical-gradient-no-hover($main-color, $change-percent) {
+  $darker-color: darken($main-color, $change-percent);
+  filter-gradient: $main-color, $darker-color, vertical; // IE6-9
+  background-image: linear-gradient($main-color, $darker-color);
+}
+
+%blue-gradient {
+  @include sw-vertical-gradient($websites-color, 3%);
+}
+
+%orange-gradient {
+  @include sw-vertical-gradient($apps-color, 3%);
+}
+
+%orange-gradient-no-hover {
+  @include sw-vertical-gradient-no-hover($apps-color, 3%);
+}
