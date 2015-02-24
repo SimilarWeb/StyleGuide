@@ -147,32 +147,6 @@ a.btn-demo-banner:hover {
   }
 }
 
-// Indicates a tooltip. Need the letter `i` inside
-.icon-info {
-  display: inline-block;
-  vertical-align: baseline;
-  height: 16px;
-  width: 16px;
-  margin-left: 5px;
-  font-size: 13px;
-  text-align: center;
-  line-height: 16px;
-  font-style: normal;
-  font-weight: bold;
-  font-family: serif;
-  text-transform: none;
-  color: $white;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, .3);
-  @include tooltip(se, $pro-brand-blue);
-  cursor: default;
-  // tooltips that need to go opposite direction so they stay on screen
-  .percentage &,
-  .adsense-indicator &,
-  .sw-cmp-app-related-sites & {
-    @include tooltip(sw, $pro-brand-blue);
-  }
-}
 
 //* 
 //* To top classes
