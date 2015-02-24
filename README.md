@@ -2,11 +2,15 @@
 Common components and classes for SimilarWeb
 
 Use connector file for convenient import of all the component scss files.
-eg. @import "sw-styleguide/dev/connector";
 
-Package contents:
+```shell
+@import "sw-styleguide/dev/connector";
+```
 
-_colors.scss  - includes main color palette constants and variables
-_fonts.scss   - font family, text styles and sizes
-_reset.scss   - resets the layout
-_base.scss    - main variables for the site
+## Package contents:
+
+1. _colors.scss  - includes main color palette constants and variables
+2. _fonts.scss   - font family, text styles and sizes
+3. _reset.scss   - resets the layout
+4. _base.scss    - main variables for the site
+
