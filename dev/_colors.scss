@@ -82,6 +82,36 @@ $chart-color-web: '97BDEC';
   @return unquote('#' + $color);
 }
 
+/* Colors
+---------------------*/
+.c-green, .c-positive {
+  color: $green !important;
+}
+
+.c-blue {
+  color: $blue !important;
+}
+
+.c-orange {
+  color: $orange !important;
+}
+
+.c-red, .c-negative {
+  color: $red !important;
+}
+
+//*
+//* Colors
+//*
+.u-blueMediumDark { color: $blue-medium-dark; }
+.u-green { color: $green; }
+.u-grayNew { color: $gray-new; }
+.u-compareColor0 { color: as-hex($compare-color-a); }
+.u-compareColor1 { color: as-hex($compare-color-b); }
+.u-compareColor2 { color: as-hex($compare-color-c); }
+.u-compareColor3 { color: as-hex($compare-color-d); }
+.u-compareColor4 { color: as-hex($compare-color-e); }
+
 //*
 //* New Site Components (only base/shared values here, individual components define colors within their scss file)
 //*
