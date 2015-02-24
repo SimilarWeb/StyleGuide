@@ -1,3 +1,4 @@
+//* the file includes color palette throughout sw website
 //*
 //* Old Color Palette
 //*
@@ -11,6 +12,7 @@ $blueBar: $blue;
 $black: #000;
 $paidColor: #9BC6E6;
 
+//grays
 $grayTextLight: #838383;
 $grayText: #555;
 $grayTextDark: #545454;
@@ -125,6 +127,8 @@ $websites-color: $blue-medium;
 // Typography
 $disabled-text-color: $gray-medium;
 $text-color: $gray-dark;
+
+//Gradients
 
 // A vertical gradient lighter(at top) -> darker(at bottom)
 @mixin sw-vertical-gradient($main-color, $change-percent) {
