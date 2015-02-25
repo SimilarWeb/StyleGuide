@@ -1,21 +1,21 @@
 {
   "name": "sw-styleguide",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "authors": [
     "Oleg Glybchenko <olegg@similarweb.com>",
-	"Michal Sela <michalse@similarweb.com>",
-	"David Tintner<davidt@similarweb.com>"
+    "Michal Sela <michalse@similarweb.com>",
+    "David Tintner<davidt@similarweb.com>"
   ],
-  "main":  "dev/*.scss",
-	"ignore": [
-	  "**/*.html",
-	  "**/*.jpg",
-	  "**/*.jpeg",
-	  "*.html",
-	  "**/*.eot",
-	  "**/*.svg",
-	  "**/*.ttf",
-	  "**/*.woff",
+  "main": "dev/*.scss",
+  "ignore": [
+    "**/*.html",
+    "**/*.jpg",
+    "**/*.jpeg",
+    "*.html",
+    "**/*.eot",
+    "**/*.svg",
+    "**/*.ttf",
+    "**/*.woff",
     "node_modules"
   ],
   "description": "base components and classes of similarweb packaged as a single entity",
@@ -25,7 +25,7 @@
   "keywords": [
     "styleguide",
     "css",
-	"scss"
+    "scss"
   ],
   "license": "MIT"
 }
