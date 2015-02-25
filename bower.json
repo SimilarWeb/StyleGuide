@@ -1,12 +1,16 @@
 {
   "name": "sw-styleguide",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "authors": [
     "Oleg Glybchenko <olegg@similarweb.com>",
     "Michal Sela <michalse@similarweb.com>",
     "David Tintner<davidt@similarweb.com>"
   ],
-  "main": "dev/*.scss",
+  "main": [
+    "dev/*.scss",
+    "dist/*.css", 
+    "css/*.css"
+    ],
   "ignore": [
     "**/*.html",
     "**/*.jpg",
@@ -27,5 +31,8 @@
     "css",
     "scss"
   ],
+  "repository": {
+    "type":"git",
+    "url": "git://github.com/SimilarWeb/StyleGuide.git"},
   "license": "MIT"
 }
