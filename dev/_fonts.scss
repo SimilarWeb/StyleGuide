@@ -1,0 +1,56 @@
+// TODO DT: load fonts via fontface instead of in the html
+$sansFontFamily: 'Open Sans', sans-serif;
+$fontCondensed: 'Open Sans Condensed', sans-serif;
+$fontCondensedLight: 'Open Sans Condensed Light', sans-serif;
+
+$sw-base-font-size: 16px; // changing this will effect the entire site font-size
+
+//old
+$baseFontSize: 12px;
+//* Where the magic happens
+//* Define the font for any element
+@mixin setFont($family: $sansFontFamily, $weight: false, $size: false){
+  font-family: $family;
+
+  @if $weight {
+    font-weight: $weight;
+  }
+  // bold defaults to font-weight 700, but with open sans we want to use 600 instead
+  @if $family == $sansFontFamily {
+    @if $weight == 'bold' {
+      $weight: 600;
+    }
+  }
+  @if $size {
+    @include calc-rem-font-size($size);
+  }
+}
+
+// utility function, don't use this by itself
+@mixin calc-rem-font-size($font-size) {
+  font-size: $font-size;
+  font-size: ($font-size / $sw-base-font-size) * 1rem;
+}
+
+/* Font styles
+---------------------*/
+.text-rel-size2 {
+  font-size: 1.2em;
+  font-size: 1.2vw;
+}
+
+.text-style-1 {
+  font-family: $fontCondensedLight;
+}
+
+.text-style-2 {
+  font-family: $fontCondensed;
+  font-weight: 700;
+}
+
+//*
+//* Text styles
+//*
+.u-bold { @include setFont($weight: bold); }
+.u-alignCenter { text-align: center; }
+.u-alignRight { text-align: right; }

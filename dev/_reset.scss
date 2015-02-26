@@ -1,0 +1,29 @@
+//
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+  height: 1px;
+  background-color: $body-bg;
+}
+
+ul {
+  list-style-type: none;
+}
+
+chart {
+  display: block;
+}
+
+tag-cloud, [tag-cloud] {
+  display: block;
+  height: inherit;
+  width: inherit;
+}
+
+hgroup h5{
+	color:#838383;
+}

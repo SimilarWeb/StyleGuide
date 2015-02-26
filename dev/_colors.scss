@@ -1,0 +1,162 @@
+//* the file includes color palette throughout sw website
+//*
+//* Old Color Palette
+//*
+$midnightBlue: #2c3e50;
+$peteRiver: #538FCC;
+$belizeHole: #3B7AB5;
+$carrot: #e67e22;
+
+$blue: #4383b3;
+$blueBar: $blue;
+$black: #000;
+$paidColor: #9BC6E6;
+
+//grays
+$grayTextLight: #838383;
+$grayText: #555;
+$grayTextDark: #545454;
+$white: #fff !default;
+$grayMoreDarker: #d2d2d2;
+$grayDarker: #d9d9d9;
+$grayDark: #E5E5E5;
+$gray: #F0F0F0;
+$grayLight: #F3F3F3;
+$grayLighter: #F9F9F9;
+$grayBorder: $grayMoreDarker;
+
+$blueLight: #e6f5fc;
+$blueDark: #3999C1;
+$blueSemiDark: #6e99af;
+
+$hrBorder: $grayDarker;
+$textColor: $grayTextDark;
+
+$placeholderText: $grayDarker;
+
+$bodyBackground: #E9E9E9;
+
+$navbarBackgroundHighlight: #3999c1;
+$navbarBackground: $peteRiver;
+
+$bg1: #2B3D53;
+
+$navbarLinkBackgroundHover: $belizeHole;
+$navbarLinkBackgroundActive: $belizeHole;
+$navbarLinkColorHover: #fff;
+
+$dropdownLinkColor: $blueDark;
+
+$navbarLinkColorActive: #fff;
+$navbarText: #fff;
+$navbarLinkColor: #fff;
+
+//*
+//* New Color Definitions (give colors a hex here, then components can reference these variables)
+//*
+$blue-dark: #2B3D52;
+$blue-medium-dark: #486AB4;
+$blue-medium: #508ECF;
+$orange: #ff9700;
+$green: #7CC924;
+$red: red;
+$gray-extra-dark: #313131;
+$gray-dark: #707070;
+$gray-new: #868686;
+$gray-medium: #abb1b8;
+$gray-light: #d6d6d6;
+$gray-extra-light: #eaeaea;
+$sagi-white: #fafafa;
+$sagi-offwhite: #f3f3f3;
+
+//*
+//* chart marker colors
+//*
+// need to use just the string for specifying in URL in the
+$compare-color-a: '8E70E0';
+$compare-color-b: '00B5F0';
+$compare-color-c: '71CA2F';
+$compare-color-d: 'F60';
+$compare-color-e: 'F3C';
+$chart-color-mobile: '0061C8';
+$chart-color-web: '97BDEC';
+@function as-hex($color) {
+  @return unquote('#' + $color);
+}
+
+/* Colors
+---------------------*/
+.c-green, .c-positive {
+  color: $green !important;
+}
+
+.c-blue {
+  color: $blue !important;
+}
+
+.c-orange {
+  color: $orange !important;
+}
+
+.c-red, .c-negative {
+  color: $red !important;
+}
+
+//*
+//* Colors
+//*
+.u-blueMediumDark { color: $blue-medium-dark; }
+.u-green { color: $green; }
+.u-grayNew { color: $gray-new; }
+.u-compareColor0 { color: as-hex($compare-color-a); }
+.u-compareColor1 { color: as-hex($compare-color-b); }
+.u-compareColor2 { color: as-hex($compare-color-c); }
+.u-compareColor3 { color: as-hex($compare-color-d); }
+.u-compareColor4 { color: as-hex($compare-color-e); }
+
+//*
+//* New Site Components (only base/shared values here, individual components define colors within their scss file)
+//*
+$apps-color: $orange;
+$body-bg: $sagi-white;
+$border-color: $gray-medium;
+$pro-brand-blue: $blue-dark;
+$pro-brand-orange: $orange;
+$websites-color: $blue-medium;
+
+// Typography
+$disabled-text-color: $gray-medium;
+$text-color: $gray-dark;
+
+//Gradients
+
+// A vertical gradient lighter(at top) -> darker(at bottom)
+@mixin sw-vertical-gradient($main-color, $change-percent) {
+  //  $lighter-color: lighten($main-color, $change-percent);
+  $darker-color: darken($main-color, $change-percent);
+
+  filter-gradient: $main-color, $darker-color, vertical; // IE6-9
+  background-image: linear-gradient($main-color, $darker-color);
+  &:hover {
+    filter-gradient: $darker-color, $main-color, vertical; // IE6-9
+    background-image: linear-gradient($darker-color, $main-color);
+  }
+}
+
+@mixin sw-vertical-gradient-no-hover($main-color, $change-percent) {
+  $darker-color: darken($main-color, $change-percent);
+  filter-gradient: $main-color, $darker-color, vertical; // IE6-9
+  background-image: linear-gradient($main-color, $darker-color);
+}
+
+%blue-gradient {
+  @include sw-vertical-gradient($websites-color, 3%);
+}
+
+%orange-gradient {
+  @include sw-vertical-gradient($apps-color, 3%);
+}
+
+%orange-gradient-no-hover {
+  @include sw-vertical-gradient-no-hover($apps-color, 3%);
+}

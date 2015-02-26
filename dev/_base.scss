@@ -1,0 +1,40 @@
+//Main constants and variables thoughout the website
+//
+//Default variables for the layout
+//
+$inputBorder: #CCC;
+
+$baseBorderRadius: 0;
+$inputBorderRadius: 0;
+$tabsHeight: 30px;
+
+$navbarHeight: 30px !default;
+$brandingHeight: 50px !default;
+$sidebarWidth: 300px;
+$helpSidebarWidth: 400px;
+$pageMinWidth: 1200px;
+$tableBorder: #ddd;
+$linkColor: #08c !default;
+$linkColorHover: darken($linkColor, 15%) !default;
+
+//*
+//* Site Structure
+//*
+$container-width: 1280px;
+$gutter-width: 32px;
+$input-element-height: 35px;
+
+//* Single purpose utility classes
+
+//*
+//* Display
+//*
+.u-block { display: block; }
+.u-inlineBlock { display: inline-block; }
+.u-inline { display: inline; }
+
+
+//*
+//* Padding
+//*
+.u-padding { padding: 50px; }
