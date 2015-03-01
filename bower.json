@@ -8,6 +8,7 @@
   ],
   "main": [
     "source/css/*.scss",
+    "source/*.scss",
     "public/*.css"
     ],
   "ignore": [
