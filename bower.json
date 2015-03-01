@@ -7,19 +7,13 @@
     "David Tintner<davidt@similarweb.com>"
   ],
   "main": [
-    "dev/*.scss",
-    "dist/*.css", 
-    "css/*.css"
+    "source/css/*.scss",
+    "public/*.css"
     ],
   "ignore": [
-    "**/*.html",
-    "**/*.jpg",
-    "**/*.jpeg",
-    "*.html",
-    "**/*.eot",
-    "**/*.svg",
-    "**/*.ttf",
-    "**/*.woff",
+    "config",
+    "core",
+    "extras",
     "node_modules"
   ],
   "description": "base components and classes of similarweb packaged as a single entity",
