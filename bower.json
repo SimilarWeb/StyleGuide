@@ -15,7 +15,8 @@
     "config",
     "core",
     "extras",
-    "node_modules"
+    "node_modules",
+    "bower_components"
   ],
   "description": "base components and classes of similarweb packaged as a single entity",
   "moduleType": [
