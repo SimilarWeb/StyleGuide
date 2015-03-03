@@ -21,8 +21,8 @@ module.exports = function (grunt) {
                     update: true
                 },
                 files: {
-                    'public/css/main.css': 'source/css/connector.scss'
-                  //'public/css/style.css': 'source/css/style.scss'
+                  //'public/css/main.css': 'source/css/connector.scss',
+                  'public/css/style.css': 'source/css/style.scss'
                 }
             },
             release: {
