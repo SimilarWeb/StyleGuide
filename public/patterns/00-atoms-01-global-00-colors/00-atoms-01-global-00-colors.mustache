@@ -1,48 +1,78 @@
-
-
 &lt;ul class=&quot;sg-colors&quot;&gt;
-
-    {{#colors}}
+    &lt;h4 class=&quot;u-bold&quot;&gt;
+        Old Palette Colors
+    &lt;/h4&gt;
+    {{#oldPaletteColors}}
         &lt;li&gt;
-            &lt;span class=&quot;sg-swatch&quot; style=&quot;background:{{value}};&quot;&gt;&lt;/span&gt;
-            &lt;span class=&quot;sg-label&quot;&gt;{{name}}:{{value}}&lt;/span&gt;
+            &lt;span class=&quot;sg-swatch&quot; style=&quot;background:{{Value}};&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;sg-label&quot;&gt;&lt;span&gt;{{Name}}: {{Value}}&lt;/span&gt;&lt;/span&gt;
         &lt;/li&gt;
-    {{/colors}}
+    {{/oldPaletteColors}}
+&lt;/ul&gt;
+&lt;ul class=&quot;sg-colors&quot;&gt;
+    &lt;h4 class=&quot;u-bold&quot;&gt;
+        New Definitions
+    &lt;/h4&gt;
+    {{#newDefinitionsColors}}
+        &lt;li&gt;
+            &lt;span class=&quot;sg-swatch&quot; style=&quot;background:{{Value}};&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;sg-label&quot;&gt;&lt;span&gt;{{Name}}: {{Value}}&lt;/span&gt;&lt;/span&gt;
+        &lt;/li&gt;
+    {{/newDefinitionsColors}}
+&lt;/ul&gt;
+&lt;ul class=&quot;sg-colors&quot;&gt;
+    &lt;h4 class=&quot;u-bold&quot;&gt;
+        Chart Marker Colors
+    &lt;/h4&gt;
+    {{#chartMarkerColors}}
+        &lt;li&gt;
+            &lt;span class=&quot;sg-swatch&quot; style=&quot;background:{{Value}};&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;sg-label&quot;&gt;&lt;span&gt;{{Name}}: {{Value}}&lt;/span&gt;&lt;/span&gt;
+        &lt;/li&gt;
+    {{/chartMarkerColors}}
+&lt;/ul&gt;
+&lt;ul class=&quot;sg-colors&quot;&gt;
+    &lt;h4 class=&quot;u-bold&quot;&gt;
+        C-class Colors
+    &lt;/h4&gt;
+    {{#cColors}}
+        &lt;li&gt;
+            &lt;span class=&quot;sg-swatch&quot; style=&quot;background:{{Value}};&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;sg-label&quot;&gt;&lt;span&gt;{{Name}}: {{Value}}&lt;/span&gt;&lt;/span&gt;
+        &lt;/li&gt;
+    {{/cColors}}
+&lt;/ul&gt;
+&lt;ul class=&quot;sg-colors&quot;&gt;
+    &lt;h4 class=&quot;u-bold&quot;&gt;
+        U-class Colors
+    &lt;/h4&gt;
+    {{#uColors}}
+        &lt;li&gt;
+            &lt;span class=&quot;sg-swatch&quot; style=&quot;background:{{Value}};&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;sg-label&quot;&gt;&lt;span&gt;{{Name}}: {{Value}}&lt;/span&gt;&lt;/span&gt;
+        &lt;/li&gt;
+    {{/uColors}}
+&lt;/ul&gt;
+&lt;ul class=&quot;sg-colors&quot;&gt;
+    &lt;h4 class=&quot;u-bold&quot;&gt;
+        New Components Shared Colors
+    &lt;/h4&gt;
+    {{#newComponentsColors}}
+        &lt;li&gt;
+            &lt;span class=&quot;sg-swatch&quot; style=&quot;background:{{Value}};&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;sg-label&quot;&gt;&lt;span&gt;{{Name}}: {{Value}}&lt;/span&gt;&lt;/span&gt;
+        &lt;/li&gt;
+    {{/newComponentsColors}}
+&lt;/ul&gt;
+&lt;ul class=&quot;sg-colors&quot;&gt;
+    &lt;h4 class=&quot;u-bold&quot;&gt;
+        Text Colors
+    &lt;/h4&gt;
+    {{#textColors}}
+        &lt;li&gt;
+            &lt;span class=&quot;sg-swatch&quot; style=&quot;background:{{Value}};&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;sg-label&quot;&gt;&lt;span&gt;{{Name}}: {{Value}}&lt;/span&gt;&lt;/span&gt;
+        &lt;/li&gt;
+    {{/textColors}}
 
-	&lt;li&gt;
-		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #ff0000;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#ff0000&lt;/span&gt;
-	&lt;/li&gt;
-	&lt;li&gt;
-		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #00ff00;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#00ff00&lt;/span&gt;
-	&lt;/li&gt;
-	&lt;li&gt;
-		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #0000ff;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#0000ff&lt;/span&gt;
-	&lt;/li&gt;
-	&lt;li&gt;
-		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #ffff00;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#ffff00&lt;/span&gt;
-	&lt;/li&gt;
-	&lt;li&gt;
-		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #00ffff;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#00ffff&lt;/span&gt;
-	&lt;/li&gt;
-	&lt;li&gt;
-		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #ff00ff;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#ff00ff&lt;/span&gt;
-	&lt;/li&gt;
-	&lt;li&gt;
-		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #ffffff;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#ffffff&lt;/span&gt;
-	&lt;/li&gt;
-	&lt;li&gt;
-		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #808080;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#808080&lt;/span&gt;
-	&lt;/li&gt;
-	&lt;li&gt;
-		&lt;span class=&quot;sg-swatch&quot; style=&quot;background: #000000;&quot;&gt;&lt;/span&gt;
-		&lt;span class=&quot;sg-label&quot;&gt;#000000&lt;/span&gt;
-	&lt;/li&gt;
 &lt;/ul&gt;

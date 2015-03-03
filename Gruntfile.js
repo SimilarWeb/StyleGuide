@@ -21,7 +21,7 @@ module.exports = function (grunt) {
                     update: true
                 },
                 files: {
-                    'public/css/style.css': 'source/css/connector.scss'
+                    'public/css/main.css': 'source/css/connector.scss'
                   //'public/css/style.css': 'source/css/style.scss'
                 }
             },
@@ -31,7 +31,7 @@ module.exports = function (grunt) {
                     sourcemap: 'inline'
                 },
                 files: {
-                  'public/dist/style.css': 'source/css/connector.scss'
+                  'public/dist/main.css': 'source/css/connector.scss'
                   //'public/dist/main.css': 'source/css/style.scss'
                 }
             }

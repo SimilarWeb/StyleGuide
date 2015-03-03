@@ -90,8 +90,327 @@
 		{ },
 		{ }
 	],
-  "colors":[
-    {"name": "$midnightBlue", "value":"#2c3e50"},
-    {"name": "$peteRiver","value":"#538FCC"}
-  ]
+  "oldPaletteColors":[
+    {
+      "Name": "$midnightBlue",
+      "Value": "#2c3e50"
+    },
+    {
+      "Name": "$peteRiver",
+      "Value": "#538FCC"
+    },
+    {
+      "Name": "$belizeHole",
+      "Value": "#3B7AB5"
+    },
+    {
+      "Name": "$carrot",
+      "Value": "#e67e22"
+    },
+    {
+      "Name": "$blue",
+      "Value": "#4383b3"
+    },
+    {
+      "Name": "$blueBar",
+      "Value": "#4383b3"
+    },
+    {
+      "Name": "$black",
+      "Value": "#000"
+    },
+    {
+      "Name": "$paidColor",
+      "Value": "#9BC6E6"
+    },
+    {
+      "Name": "$grayTextLight",
+      "Value": "#838383"
+    },
+    {
+      "Name": "$grayText",
+      "Value": "#555"
+    },
+    {
+      "Name": "$grayTextDark",
+      "Value": "#545454"
+    },
+    {
+      "Name": "$white",
+      "Value": "#fff"
+    },
+    {
+      "Name": "$grayMoreDarker",
+      "Value": "#d2d2d2"
+    },
+    {
+      "Name": "$grayDarker",
+      "Value": "#d9d9d9"
+    },
+    {
+      "Name": "$grayDark",
+      "Value": "#E5E5E5"
+    },
+    {
+      "Name": "$gray",
+      "Value": "#F0F0F0"
+    },
+    {
+      "Name": "$grayLight",
+      "Value": "#F3F3F3"
+    },
+    {
+      "Name": "$grayLighter",
+      "Value": "#F9F9F9"
+    },
+    {
+      "Name": "$grayBorder",
+      "Value": "#d2d2d2"
+    },
+    {
+      "Name": "$blueLight",
+      "Value": "#e6f5fc"
+    },
+    {
+      "Name": "$blueDark",
+      "Value": "#3999C1"
+    },
+    {
+      "Name": "$blueSemiDark",
+      "Value": "#6e99af"
+    },
+    {
+      "Name": "$hrBorder",
+      "Value": "#d9d9d9"
+    },
+    {
+      "Name": "$textColor",
+      "Value": "#545454"
+    },
+    {
+      "Name": "$placeholderText",
+      "Value": "#d9d9d9"
+    },
+    {
+      "Name": "$bodyBackground",
+      "Value": "#E9E9E9"
+    },
+    {
+      "Name": "$navbarBackgroundHighlight",
+      "Value": "#3999c1"
+    },
+    {
+      "Name": "$navbarBackground",
+      "Value": "#538FCC"
+    },
+    {
+      "Name": "$bg1",
+      "Value": "#2B3D53"
+    },
+    {
+      "Name": "$navbarLinkBackgroundHover",
+      "Value": "#3B7AB5"
+    },
+    {
+      "Name": "$navbarLinkBackgroundActive",
+      "Value": "#3B7AB5"
+    },
+    {
+      "Name": "$navbarLinkColorHover",
+      "Value": "#fff"
+    },
+    {
+      "Name": "$dropdownLinkColor",
+      "Value": "#3999C1"
+    },
+    {
+      "Name": "$navbarLinkColorActive",
+      "Value": "#fff"
+    },
+    {
+      "Name": "$navbarText",
+      "Value": "#fff"
+    },
+    {
+      "Name": "$navbarLinkColor",
+      "Value": "#fff"
+    }
+    ],
+  "newDefinitionsColors":[
+    {
+      "Name": "$blue-dark",
+      "Value": "#2B3D52"
+    },
+    {
+      "Name": "$blue-medium-dark",
+      "Value": "#486AB4"
+    },
+    {
+      "Name": "$blue-medium",
+      "Value": "#508ECF"
+    },
+    {
+      "Name": "$orange",
+      "Value": "#ff9700"
+    },
+    {
+      "Name": "$green",
+      "Value": "#7CC924"
+    },
+    {
+      "Name": "$red",
+      "Value": "red"
+    },
+    {
+      "Name": "$gray-extra-dark",
+      "Value": "#313131"
+    },
+    {
+      "Name": "$gray-dark",
+      "Value": "#707070"
+    },
+    {
+      "Name": "$gray-new",
+      "Value": "#868686"
+    },
+    {
+      "Name": "$gray-medium",
+      "Value": "#abb1b8"
+    },
+    {
+      "Name": "$gray-light",
+      "Value": "#d6d6d6"
+    },
+    {
+      "Name": "$gray-extra-light",
+      "Value": "#eaeaea"
+    },
+    {
+      "Name": "$sagi-white",
+      "Value": "#fafafa"
+    },
+    {
+      "Name": "$sagi-offwhite",
+      "Value": "#f3f3f3"
+    }],
+  "chartMarkerColors":[
+    {
+      "Name": "$compare-color-a",
+      "Value": "#8E70E0"
+    },
+    {
+      "Name": "$compare-color-b",
+      "Value": "#00B5F0"
+    },
+    {
+      "Name": "$compare-color-c",
+      "Value": "#71CA2F"
+    },
+    {
+      "Name": "$compare-color-d",
+      "Value": "#F60"
+    },
+    {
+      "Name": "$compare-color-e",
+      "Value": "#F3C"
+    },
+    {
+      "Name": "$chart-color-mobile",
+      "Value": "#0061C8"
+    },
+    {
+      "Name": "$chart-color-web",
+      "Value": "#97BDEC"
+    }],
+  "cColors":[{
+      "Name": "c-green",
+      "Value": "#7CC924"
+    },
+    {
+      "Name": "c-positive",
+      "Value":  "#7CC924"
+    },
+    {
+      "Name": "c-blue",
+      "Value": "#4383b3"
+    },
+    {
+      "Name": "c-orange",
+      "Value": "#ff9700"
+    },
+    {
+      "Name": "c-red",
+      "Value": "red"
+    },
+    {
+      "Name": "c-negative",
+      "Value": "red"
+    }],
+  "uColors":[
+    {
+      "Name": "u-blueMediumDark",
+      "Value": "#486AB4"
+    },
+    {
+      "Name": "u-green",
+      "Value": "#7CC924"
+    },
+    {
+      "Name": "u-grayNew",
+      "Value": "#868686"
+    },
+    {
+      "Name": "u-compareColor0",
+      "Value": "#8E70E0"
+    },
+    {
+      "Name": "u-compareColor1",
+      "Value": "#00B5F0"
+    },
+    {
+      "Name": "u-compareColor2",
+      "Value": "#71CA2F"
+    },
+    {
+      "Name": "u-compareColor3",
+      "Value": "#F60"
+    },
+    {
+      "Name": "u-compareColor4",
+      "Value": "#F3C"
+    }],
+  "newComponentsColors":[
+    {
+      "Name": "$apps-color",
+      "Value": "#ff9700"
+    },
+    {
+      "Name": "$body-bg",
+      "Value": "#fafafa"
+    },
+    {
+      "Name": "$border-color",
+      "Value": "#abb1b8"
+    },
+    {
+      "Name": "$pro-brand-blue",
+      "Value": "#2B3D52"
+    },
+    {
+      "Name": "$pro-brand-orange",
+      "Value": "#ff9700"
+    },
+    {
+      "Name": "$websites-color",
+      "Value": "#508ECF"
+    }],
+    "textColors":[
+      {
+      "Name": "$disabled-text-color",
+      "Value": "#abb1b8"
+    },
+    {
+      "Name": "$text-color",
+      "Value": "#707070"
+    }]
 }
