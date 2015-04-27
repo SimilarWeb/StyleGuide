@@ -130,7 +130,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', ['auto_install', 'sass:dev', 'watch']);
     grunt.registerTask('release', ['clean:all', 'sass:release']);
-    grunt.registerTask('dev', ['sass:dev', 'shell:patternlab'] );
+    grunt.registerTask('public', ['sass:dev', 'shell:patternlab'] );
 
     grunt.registerTask('push',['gitcheckout:master','release', 'gitadd', 'bump']);
     grunt.registerTask('gh-pages',['gitcheckout:ghpages','release', 'gitadd', 'bump']);
