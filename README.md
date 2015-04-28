@@ -4,7 +4,7 @@ Common components and classes for SimilarWeb
 Use connector file for convenient import of all the component scss files.
 
 ```shell
-@import "sw-styleguide/dev/connector";
+@import "sw-styleguide/dev/sw-primer";
 ```
 
 ## Package contents
@@ -14,3 +14,6 @@ Use connector file for convenient import of all the component scss files.
 * **_reset.scss**   - resets the layout
 * **_base.scss**   - main variables for the site
 
+Show Case
+
+http://similarweb.github.io/StyleGuide
