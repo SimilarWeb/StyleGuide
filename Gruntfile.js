@@ -21,7 +21,6 @@ module.exports = function (grunt) {
                     update: true
                 },
                 files: {
-                  //'public/css/main.css': 'source/css/connector.scss',
                   'public/css/style.css': 'source/css/style.scss'
                 }
             },
@@ -31,8 +30,7 @@ module.exports = function (grunt) {
                     sourcemap: 'inline'
                 },
                 files: {
-                  'public/dist/main.css': 'source/css/connector.scss'
-                  //'public/dist/main.css': 'source/css/style.scss'
+                  'public/dist/main.css': 'source/css/sw-primer.scss'
                 }
             }
         },
@@ -121,7 +119,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-auto-install');
     grunt.loadNpmTasks('grunt-bump');
