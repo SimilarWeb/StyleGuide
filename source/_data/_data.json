@@ -258,11 +258,11 @@
       "Value": "#7CC924"
     },
     {
-      "Name": "$greenNeon",
+      "Name": "$green-neon",
       "Value": "#7ED321"
     },
     {
-      "Name": "$greenNeonHover",
+      "Name": "$green-neon-hover",
       "Value": "#72BF1E"
     },
     {
